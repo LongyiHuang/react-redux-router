@@ -5,14 +5,14 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import configureStroe from './store/configureStore';
 import {BrowserRouter as Router} from 'react-router-dom';
-
+import Routes from './routes';
 const store = configureStroe();
 
 ReactDOM.render(
     <Provider store={store}>
         <Router>
             <div>
-               hello word
+                {Routes}
             </div>
         </Router>
     </Provider>,
